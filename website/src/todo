@@ -1,0 +1,6 @@
+/login  => "hello world"
+/login => LoginController
+
+spting logging level bydefault is info
+to log more info ==> chnage logging level to debug
+org.springframework.web => debug
