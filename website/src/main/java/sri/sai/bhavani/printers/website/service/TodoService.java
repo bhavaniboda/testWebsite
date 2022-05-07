@@ -17,8 +17,8 @@ public class TodoService {
 	 
 	static {
 	 todos.add(new Todo(1,"bhavani","microservices",false, new Date()));
-	 todos.add(new Todo(2,"pooja","nginx",false, new Date()));
-	 todos.add(new Todo(3,"kiranmayee","cooking",false, new Date()));
+	 todos.add(new Todo(2,"bhavani","nginx",false, new Date()));
+	 todos.add(new Todo(3,"bhavani","cooking",false, new Date()));
     }
 	
 	
@@ -46,5 +46,20 @@ public class TodoService {
 			}
 		}
 		return filteredTodosOfUser;
+	}
+	
+	public void updateTodo(Todo todo) {
+		todos.remove(todo);
+		todos.add(todo);
+	}
+	
+	public Todo retrieveTodobyId(int id) {
+	
+		for(Todo todo : todos) {
+			if(todo.getId()== id) {
+				return todo;
+			}
+		}
+		return null;
 	}
 }

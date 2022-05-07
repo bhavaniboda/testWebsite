@@ -1,0 +1,20 @@
+<nav role="navigation" class="navbar navbar-default">
+	<div class="">
+		<a href="http://www.in28minutes.com" class="navbar-brand">SSBP</a>
+	</div>
+	<div class=".pull-left">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/">Home</a></li>
+			<li><a href="/list-todos">Our Services</a></li>
+		</ul>
+	</div>
+	<div class="pull-right">
+        <ul class="nav navbar-nav">
+            <li class= "btn-success" ><a href="/login">Log In</a></li>
+        </ul>     
+        <ul class="nav navbar-nav">
+            <li class= "btn-success" ><a href="/signup">Sign Up</a></li>
+        </ul>
+	</div>
+	
+</nav>
